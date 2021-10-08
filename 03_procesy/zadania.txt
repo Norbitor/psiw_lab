@@ -1,0 +1,29 @@
+1. Jaki będzie wynik wykonania programu z listingu 3.1, jeśli zamiast jednego wywołania funkcji fork() byłyby dwa kolejne wywołania tej funkcji.
+2. Jaki będzie wynik wykonania poniższego programu (co zostanie wypisane na standardowym wyjściu), gdy:
+  a) CZAS_POTOMKA jest istotnie większy od CZAS_RODZICA
+  b) CZAS_POTOMKA jest istotnie mniejszy od CZAS_RODZICA?
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+#define CZAS_POTOMKA (?)
+#define CZAS_RODZICA (?)
+
+int main() {
+    int pid;
+    pid = fork();
+    if ( pid == 0 ){
+        sleep( CZAS_POTOMKA );
+        exit(7);
+    }
+    else {
+        int status;
+        sleep( CZAS_RODZICA );
+        kill( pid, 9 );
+        wait( &status );
+        printf( "Status = %x\n", status );
+    }
+}
+
