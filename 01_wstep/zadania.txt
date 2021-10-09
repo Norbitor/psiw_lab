@@ -3,6 +3,6 @@
   b) różnicę
   c) iloczyn
   d) iloraz (całkowity)
-2. Przetestuj program dla istniejącego pliku z prawem do odczytu.
-3. Przetestuj program dla istniejącego pliku bez prawa do odczytu.
-4. Przetestuj program dla nieistniejącego pliku (z błędnie podaną nazwą).
+2. Przetestuj program 1-2 dla istniejącego pliku z prawem do odczytu.
+3. Przetestuj program 1-2 dla istniejącego pliku bez prawa do odczytu.
+4. Przetestuj program 1-2 dla nieistniejącego pliku (z błędnie podaną nazwą).
