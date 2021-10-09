@@ -18,4 +18,18 @@ int main()
     printf("Enter two numbers: ");
     scanf("%lf %lf", &a, &b);
     printf("You've entered: %f and %f\n", a, b);
+
+    // 4. Comparison
+    double num1 = 0.1;
+    double num2 = 0.2;
+    double num3 = 0.3;
+
+    if (num1 + num2 == num3)
+    {
+        printf("%f + %f = %f\n", num1, num2, num3);
+    }
+    else
+    {
+        printf("%f + %f != %f\n", num1, num2, num3);
+    }
 }
