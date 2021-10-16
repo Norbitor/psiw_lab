@@ -4,10 +4,13 @@
 
 int main()
 {
+    printf("pid = %d, ppid = %d\n", getpid(), getppid());
     if (fork() == 0)
-    {
-        sleep(30);
-        exit(0);
+    { // child process
+        printf("pid = %d, ppid = %d\n", getpid(), getppid());
+        sleep(15);
+        printf("pid = %d, ppid = %d\n", getpid(), getppid());
+        exit(EXIT_SUCCESS);
     }
-    exit(0);
+    exit(EXIT_SUCCESS);
 }

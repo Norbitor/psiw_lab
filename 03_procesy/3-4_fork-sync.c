@@ -12,6 +12,8 @@ int main()
         perror("Error while executing a program");
         exit(1);
     }
-    wait(NULL);
-    printf("End\n");
+    puts("Waiting for a child to die...");
+    int status;
+    wait(&status);
+    printf("End, child exit status is %d\n", WEXITSTATUS(status));
 }
