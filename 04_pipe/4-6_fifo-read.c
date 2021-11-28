@@ -48,6 +48,8 @@ int main()
             exit(1);
         }
         printf("Read from FIFO: %s\n", buf);
+        close(pdesk);
+        unlink("/tmp/fifo");
     }
     }
 }

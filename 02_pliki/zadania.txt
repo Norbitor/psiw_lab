@@ -1,3 +1,3 @@
 1. Napisz program do tworzenia kopii drugiej połowy pliku.
-2. Napisz program do zastępowania wszystkich cyfr dzisiętnych (od 0 do 9) w kopii pliku znakiem X.
+2. Napisz program do zastępowania wszystkich cyfr dziesiętnych (od 0 do 9) w kopii pliku znakiem X.
 3. Napisz program do tworzenia kopii pliku z odwróceniem kolejności bajtów/znaków.
